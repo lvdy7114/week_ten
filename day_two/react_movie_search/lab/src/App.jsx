@@ -25,7 +25,8 @@ function App() {
 		console.error(e)
 	}
 }
-  // This will run on the first render but not on subsquent renders
+  // This will run on the first render but not on subsquent renders 
+  //if there is time, set getMovie function to choose random movie when it refreshes
   useEffect(() => {
     getMovie("Clueless");
   }, []);
