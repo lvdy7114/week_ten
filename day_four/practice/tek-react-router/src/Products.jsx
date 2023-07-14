@@ -10,6 +10,7 @@ function Products() {
     <div className="app">
       <div className="grid-container">
         {data.map((vehicle, index) => {
+          return (
           <Link
             to={`/product/${vehicle.id}`}
             key={vehicle.id}
@@ -27,7 +28,8 @@ function Products() {
               </h2>
               <h3>{vehicle.trim}</h3>
             </div>
-          </Link>;
+          </Link>
+          )
         })}
       </div>
     </div>

@@ -30,7 +30,8 @@ function Product() {
   }
 
   return (
-    <div className="product-bg">
+    <div className="app product-bg highlight">
+  
       <Link to="/" className="button">
         Go home
       </Link>
@@ -50,7 +51,7 @@ function Product() {
         <div className="navigation">
           <Link
             style={{ color: "white" }}
-            to={`/products/${
+            to={`/product/${
               data[(currentIndex - 1 + data.length) % data.length].id
             }`}
             onClick={handlePrevious}
@@ -60,7 +61,7 @@ function Product() {
 
           <Link
             style={{ color: "white" }}
-            to={`/products/${data[(currentIndex + 1) % data.length].id}`}
+            to={`/product/${data[(currentIndex + 1) % data.length].id}`}
             onClick={handleNext}
           >
             Next &gt;

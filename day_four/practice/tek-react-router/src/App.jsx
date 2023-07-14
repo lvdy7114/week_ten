@@ -8,12 +8,14 @@ import Product from "./Product";
 
 function App() {
   return (
+
+    
     <Router>
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<Product />} />
+          <Route path="/product/:id" element={<Product />} />
         </Routes>
       </div>
     </Router>
