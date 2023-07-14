@@ -7,7 +7,7 @@ function Home() {
         <div className="tesla">
             <div className="home-content">
                 <h1>Welcome to the Home page</h1>
-                <p>Click the button below to go to the Products page. When clicking on /products page just a white page.</p>
+                <p>Click the button below to go to the Products page.</p>
                 <Link to="/products" className="button">
           Go to products
         </Link>
