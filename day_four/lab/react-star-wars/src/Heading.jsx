@@ -1,0 +1,12 @@
+import React from "react";
+
+
+const Heading = () => {
+    return (
+        <div className="heading">
+            <h1>STAR WARS STARSHIPS</h1>
+        </div>
+    );
+};
+
+export default Heading;
